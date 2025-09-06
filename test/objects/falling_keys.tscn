@@ -1,10 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5xux881dcgks"]
 
-[ext_resource type="Texture2D" uid="uid://cutlo6gc186e3" path="res://art/arrows.webp" id="1_n4r0k"]
+[ext_resource type="Texture2D" uid="uid://b783w661go4d5" path="res://art/nmbbnewww asset 2.png" id="1_d7txh"]
 [ext_resource type="Script" uid="uid://bf72ose6hjg4v" path="res://objects/falling_keys.gd" id="2_d7txh"]
 
 [node name="FallingKeys" type="Sprite2D"]
-texture = ExtResource("1_n4r0k")
+scale = Vector2(0.89, 0.89)
+texture = ExtResource("1_d7txh")
 hframes = 4
 vframes = 3
 frame = 4
@@ -16,7 +17,7 @@ one_shot = true
 autostart = true
 
 [node name="Delete" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 5.0
 one_shot = true
 autostart = true
 

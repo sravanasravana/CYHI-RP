@@ -1,26 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnhyam40h2pk"]
+[gd_scene load_steps=3 format=3 uid="uid://cnhyam40h2pk"]
 
 [ext_resource type="PackedScene" uid="uid://c1uu3gmowp46b" path="res://objects/key_listener.tscn" id="1_qc6i3"]
+[ext_resource type="PackedScene" uid="uid://2kv6j8khfpem" path="res://levels/gameui.tscn" id="2_sklrn"]
 
 [node name="GameLevel" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+[node name="Bg" type="Sprite2D" parent="."]
+
 [node name="KeyListener" parent="." instance=ExtResource("1_qc6i3")]
-position = Vector2(-120, 280)
+position = Vector2(-122, 273)
+scale = Vector2(1.3, 1.263)
 key_name = "button_Q"
+hit_frame = 9
 
 [node name="KeyListener2" parent="." instance=ExtResource("1_qc6i3")]
-position = Vector2(-40, 280)
+position = Vector2(-42, 273)
+scale = Vector2(1.3, 1.3)
 frame = 1
 key_name = "button_W"
+idle_frame = 1
+hit_frame = 13
 
 [node name="KeyListener3" parent="." instance=ExtResource("1_qc6i3")]
-position = Vector2(40, 280)
+position = Vector2(41, 273)
+scale = Vector2(1.3, 1.3)
 frame = 2
 key_name = "button_E"
+idle_frame = 2
+hit_frame = 14
 
 [node name="KeyListener4" parent="." instance=ExtResource("1_qc6i3")]
-position = Vector2(120, 280)
+position = Vector2(122, 273)
+scale = Vector2(1.3, 1.3)
 frame = 3
 key_name = "button_R"
+idle_frame = 3
+hit_frame = 10
+
+[node name="GAMEUI" parent="." instance=ExtResource("2_sklrn")]

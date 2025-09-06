@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://2kv6j8khfpem"]
+
+[ext_resource type="Script" uid="uid://b1bbbyf5srixi" path="res://levels/gameui.gd" id="1_853rm"]
+
+[node name="GAMEUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_853rm")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Score" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 8.0
+offset_top = 10.0
+offset_right = 119.0
+offset_bottom = 50.0
+theme_override_font_sizes/normal_font_size = 23
+text = "0 PTS"
+
+[node name="Combo" type="RichTextLabel" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 134.0
+offset_bottom = 80.0
+theme_override_font_sizes/normal_font_size = 23
+text = "0x COMBO"

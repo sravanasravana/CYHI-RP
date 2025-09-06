@@ -14,6 +14,10 @@ config/name="test"
 run/main_scene="uid://cnhyam40h2pk"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
+[autoload]
+
+Signals="*res://objects/signals.gd"
+
 [display]
 
 window/size/viewport_width=360

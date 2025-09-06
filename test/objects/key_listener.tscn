@@ -1,10 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://c1uu3gmowp46b"]
 
-[ext_resource type="Texture2D" uid="uid://cutlo6gc186e3" path="res://art/arrows.webp" id="1_181ek"]
+[ext_resource type="Texture2D" uid="uid://dr8eglsplvsq6" path="res://art/new asset stuffff.png" id="1_vgigu"]
 [ext_resource type="Script" uid="uid://gysg8i0t28cc" path="res://objects/key_listener.gd" id="2_vgigu"]
 
 [node name="KeyListener" type="Sprite2D"]
-texture = ExtResource("1_181ek")
+z_index = 1
+texture = ExtResource("1_vgigu")
 hframes = 4
-vframes = 3
+vframes = 4
 script = ExtResource("2_vgigu")
+
+[node name="RandomSpawn" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="RandomSpawn" to="." method="_on_random_spawn_timeout"]

@@ -17,7 +17,7 @@ func IncrementScore(incr: int):
 	
 func IncrementCombo():
 	combo_count += 1
-	%ComboLabel.text = " " + str(combo_count) + "x COMBO"
+	%Combo.text = " " + str(combo_count) + "x COMBO"
 	
 func ResetCombo():
 	combo_count += 0

@@ -23,6 +23,7 @@ theme_override_font_sizes/normal_font_size = 23
 text = "0 PTS"
 
 [node name="Combo" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
 offset_left = 8.0
 offset_top = 40.0
 offset_right = 134.0

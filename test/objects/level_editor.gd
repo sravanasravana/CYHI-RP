@@ -14,3 +14,7 @@ var level_info = {
 func _ready() -> void:
 	if in_edit_mode:
 		pass
+	else:
+		var fk_times = level_info.get(current_level_name).get("fk_times")
+		var fk_times_arr = str_to_var(fk_times)
+		print(fk_times_arr[0])

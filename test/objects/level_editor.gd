@@ -18,3 +18,4 @@ func _ready() -> void:
 		var fk_times = level_info.get(current_level_name).get("fk_times")
 		var fk_times_arr = str_to_var(fk_times)
 		print(fk_times_arr[0])
+		
